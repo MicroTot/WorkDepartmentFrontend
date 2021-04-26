@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center; padding-top: 4px;">
+      Blank
+    </ion-title>
+    <p style="text-align: center;">[Ionic crud functionality app]</p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of name">
+    <ion-card-header>
+      <ion-card-title style="text-align: center;">{{item.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="text-align: center;">
+     is in {{item.department | lowercase}} department
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-button>Add entry </ion-button>
+<ion-button>Delete entry</ion-button>
